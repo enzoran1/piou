@@ -1,0 +1,28 @@
+{
+  "name": "pioucomponent",
+  "version": "0.2.0",
+  "description": "frontend, component",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "piou piou"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enzoran1/piou.git"
+  },
+  "keywords": [
+    "piou",
+    "frontend",
+    "component"
+  ],
+  "author": "enzo franceschini",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.55.0"
+  },
+  "bugs": {
+    "url": "https://github.com/enzoran1/piou/issues"
+  },
+  "homepage": "https://github.com/enzoran1/piou#readme",
+  "devDependencies": {}
+}
