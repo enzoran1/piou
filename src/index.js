@@ -1,4 +1,4 @@
-const piouNumber = {
+const piou = {
     add : function addTwoNums( num1, num2 ) {
       return (num1 + num2) ;
     }
@@ -58,12 +58,12 @@ const piouNumber = {
     , min : function minNum( num1, num2 ) {
         return (Math.min(num1, num2)) ;
         }
-} ;
 
-const piouArray = {
+
+
     // Array functions
     // Array.prototype.push()
-    push : function pushArray( arr, ...items ) {
+    ,push : function pushArray( arr, ...items ) {
         return (arr.push(...items)) ;
         }
 
@@ -234,12 +234,12 @@ const piouArray = {
 
     
 
-} ;
 
-const piouString = {
+
+
     // String functions
     // String.prototype.charAt()
-    charAt : function charAtString( str, index ) {
+    ,charAt : function charAtString( str, index ) {
         return (str.charAt(index)) ;
         }
 
@@ -428,12 +428,12 @@ const piouString = {
         return (str[Symbol.isConcatSpreadable]) ;
         }
    
-} ;
 
-const piouFor = {
+
+
     // for method
 
-   forDefault : function forDefault(num, callback) {
+   ,forDefault : function forDefault(num, callback) {
         for (let i = 0; i < num; i++) {
             callback(i);
         }
@@ -525,12 +525,11 @@ const piouFor = {
 
     
    
-}
 
-const piouWhile = {
+
     // while method
 
-    whileDefault : function whileDefault(num, callback) {
+    ,whileDefault : function whileDefault(num, callback) {
         let i = 0;
         while (i < num) {
             callback(i);
@@ -621,13 +620,13 @@ const piouWhile = {
 
     }
 
-}
 
-const piouJson = {
+
+
     // JSON method
 
     // JSON.stringify()
-    stringify : function stringifyString( str ) {
+    ,stringify : function stringifyString( str ) {
         return (JSON.stringify(str)) ;
         }
 
@@ -635,13 +634,13 @@ const piouJson = {
     , parse : function parseString( str ) {
         return (JSON.parse(str)) ;
         }
-    }
+    
 
-const piouFetch = {
+
     
     // post method with fetch
 
-    post : function postString( url, data, callback ) {
+    ,post : function postString( url, data, callback ) {
         fetch(url, {
             method: 'POST',
             headers: {
@@ -700,9 +699,9 @@ const piouFetch = {
 
 
 
-}
 
 
+} ;
 
 
 
@@ -724,10 +723,5 @@ const piouFetch = {
   
   
     
-  module.exports = piouNumber ;
-  module.exports = piouArray ;
-  module.exports = piouString ;
-  module.exports = piouFor ;
-  module.exports = piouWhile ;
-  module.exports = piouJson ;
-  module.exports = piouFetch ;
+  module.exports = piou;
+ 
